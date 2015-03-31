@@ -15,7 +15,7 @@
 #define fequalzero(a) (fabs(a) < FLT_EPSILON)
 
 #define isiPad (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
-#define PullOffsetTrigger (isiPad?240:140)
+
 
 static CGFloat  SVPullToRefreshViewHeight = 80;
 
