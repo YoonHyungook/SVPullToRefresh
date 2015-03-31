@@ -13,6 +13,12 @@
 
 @class SVPullToRefreshView;
 
+@interface SVPullToRefreshArrow : UIView
+
+@property (nonatomic, strong) UIColor *arrowColor;
+
+@end
+
 @interface UIScrollView (SVPullToRefresh)
 
 typedef NS_ENUM(NSUInteger, SVPullToRefreshPosition) {
@@ -26,6 +32,10 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshPosition) {
 
 @property (nonatomic, strong, readonly) SVPullToRefreshView *pullToRefreshView;
 @property (nonatomic, assign) BOOL showsPullToRefresh;
+
+@property (nonatomic, strong, readonly) SVPullToRefreshView *pullUpToRefreshView;
+@property (nonatomic, assign) BOOL showsPullUpToRefresh;
+
 
 @end
 
@@ -45,6 +55,7 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshState) {
 @property (nonatomic, strong, readonly) UILabel *subtitleLabel;
 @property (nonatomic, strong, readwrite) UIColor *activityIndicatorViewColor NS_AVAILABLE_IOS(5_0);
 @property (nonatomic, readwrite) UIActivityIndicatorViewStyle activityIndicatorViewStyle;
+@property (nonatomic, strong) SVPullToRefreshArrow *arrow;
 
 @property (nonatomic, readonly) SVPullToRefreshState state;
 @property (nonatomic, readonly) SVPullToRefreshPosition position;
