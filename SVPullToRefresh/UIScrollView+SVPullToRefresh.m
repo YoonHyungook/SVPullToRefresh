@@ -14,6 +14,9 @@
 #define fequal(a,b) (fabs((a) - (b)) < FLT_EPSILON)
 #define fequalzero(a) (fabs(a) < FLT_EPSILON)
 
+#define isiPad (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad)
+#define PullOffsetTrigger (isiPad?240:140)
+
 static CGFloat  SVPullToRefreshViewHeight = 80;
 
 
@@ -292,8 +295,8 @@ static char UIScrollViewPullUpToRefreshView;
     
     if(hasCustomView) {
         [self addSubview:customView];
-        CGRect viewBounds = [customView bounds];
-        CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
+//        CGRect viewBounds = [customView bounds];
+//        CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
 //        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
         
         switch (self.state) {

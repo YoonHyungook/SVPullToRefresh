@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2214365616B48FD70057C96E /* SVPullToRefresh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2214365516B48FD70057C96E /* SVPullToRefresh.podspec */; };
 		22E0D9191545EE5B00BB6BB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0D9181545EE5B00BB6BB5 /* UIKit.framework */; };
 		22E0D91B1545EE5B00BB6BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0D91A1545EE5B00BB6BB5 /* Foundation.framework */; };
 		22E0D91D1545EE5B00BB6BB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E0D91C1545EE5B00BB6BB5 /* CoreGraphics.framework */; };
@@ -21,10 +20,10 @@
 		22E0D94B1545F63300BB6BB5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22E0D94A1545F63300BB6BB5 /* README.md */; };
 		22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDEC961639082E00DB53A8 /* Default-568h@2x.png */; };
 		22FDEC9D16390CC800DB53A8 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2288146016047C06005C6461 /* UIScrollView+SVInfiniteScrolling.m */; };
+		75C9A5501ACAF03C0063D482 /* SVPullToRefresh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2214365516B48FD70057C96E /* SVPullToRefresh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SVPullToRefresh.podspec; path = ../SVPullToRefresh.podspec; sourceTree = "<group>"; };
 		226989041639F55E00FCBB3B /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		2288145F16047C06005C6461 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
 		2288146016047C06005C6461 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		22E0D9401545EE9000BB6BB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22E0D94A1545F63300BB6BB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		22FDEC961639082E00DB53A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVPullToRefresh.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				22E0D94A1545F63300BB6BB5 /* README.md */,
-				2214365516B48FD70057C96E /* SVPullToRefresh.podspec */,
+				75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */,
 				22E0D91E1545EE5B00BB6BB5 /* Demo */,
 				22E0D9391545EE7600BB6BB5 /* SVPullToRefresh */,
 				22E0D9171545EE5B00BB6BB5 /* Frameworks */,
@@ -160,7 +160,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SV;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Home;
 			};
 			buildConfigurationList = 22E0D90E1545EE5B00BB6BB5 /* Build configuration list for PBXProject "SVPullToRefreshDemo" */;
@@ -186,10 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E0D9231545EE5B00BB6BB5 /* InfoPlist.strings in Resources */,
+				75C9A5501ACAF03C0063D482 /* SVPullToRefresh.podspec in Resources */,
 				22E0D92F1545EE5B00BB6BB5 /* SVViewController.xib in Resources */,
 				22E0D94B1545F63300BB6BB5 /* README.md in Resources */,
 				22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */,
-				2214365616B48FD70057C96E /* SVPullToRefresh.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +240,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -275,9 +277,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
