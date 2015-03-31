@@ -20,7 +20,6 @@
 		22E0D94B1545F63300BB6BB5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22E0D94A1545F63300BB6BB5 /* README.md */; };
 		22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FDEC961639082E00DB53A8 /* Default-568h@2x.png */; };
 		22FDEC9D16390CC800DB53A8 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 2288146016047C06005C6461 /* UIScrollView+SVInfiniteScrolling.m */; };
-		75C9A5501ACAF03C0063D482 /* SVPullToRefresh.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		22E0D9401545EE9000BB6BB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22E0D94A1545F63300BB6BB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		22FDEC961639082E00DB53A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
-		75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVPullToRefresh.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				22E0D94A1545F63300BB6BB5 /* README.md */,
-				75C9A54F1ACAF03B0063D482 /* SVPullToRefresh.podspec */,
 				22E0D91E1545EE5B00BB6BB5 /* Demo */,
 				22E0D9391545EE7600BB6BB5 /* SVPullToRefresh */,
 				22E0D9171545EE5B00BB6BB5 /* Frameworks */,
@@ -186,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E0D9231545EE5B00BB6BB5 /* InfoPlist.strings in Resources */,
-				75C9A5501ACAF03C0063D482 /* SVPullToRefresh.podspec in Resources */,
 				22E0D92F1545EE5B00BB6BB5 /* SVViewController.xib in Resources */,
 				22E0D94B1545F63300BB6BB5 /* README.md in Resources */,
 				22FDEC971639082E00DB53A8 /* Default-568h@2x.png in Resources */,
