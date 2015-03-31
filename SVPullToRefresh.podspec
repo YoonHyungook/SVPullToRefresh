@@ -1,22 +1,13 @@
-Pod::Spec.new do |s|
-  s.name     = 'SVPullToRefresh'
-  s.version  = '0.4.2'
-  s.platform = :ios, '5.0'
-  s.license  = 'MIT'
-  s.summary  = 'Give pull-to-refresh to any UIScrollView with 1 line of code.'
-  s.homepage = 'https://github.com/AhmadYousef/SVPullToRefresh'
-  s.author   = { 'AhmadYousef' }
-  s.source   = { :git => 'https://github.com/AhmadYousef/SVPullToRefresh.git', :tag => s.version.to_s }
 
-  s.description = 'SVPullToRefresh allows you to easily add pull-to-refresh ' \
-                  'functionality to any UIScrollView subclass with only 1 ' \
-                  'line of code. Instead of depending on delegates and/or ' \
-                  'subclassing UIViewController, SVPullToRefresh extends ' \
-                  'UIScrollView with a addPullToRefreshWithActionHandler: ' \
-                  'method as well as a pullToRefreshView property.'
 
-  s.frameworks   = 'QuartzCore'
-  s.source_files = 'SVPullToRefresh/*.{h,m}'
-  s.preserve_paths  = 'Demo'
-  s.requires_arc = true
+Pod::Spec.new do |spec|
+spec.name         = 'SVPullToRefresh'
+spec.version      = '0.4.2'
+spec.license      = { :type => 'BSD' }
+spec.homepage     = 'https://github.com/AhmadYousef/SVPullToRefresh'
+spec.authors      = { 'AhmadYousef' => 'a.yousef.alqabbani@gmail.com' }
+spec.summary      = 'Give pull-to-refresh to any UIScrollView with 1 line of code.'
+spec.source       = { :git => 'https://github.com/AhmadYousef/SVPullToRefresh.git', :tag => 'v0.4.2' }
+spec.source_files = 'SVPullToRefresh/*.{h,m}'
+spec.framework    = 'QuartzCore'
 end
