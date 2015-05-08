@@ -458,13 +458,13 @@ static char UIScrollViewPullUpToRefreshView;
 }
 
 - (void)setScrollViewContentInset:(UIEdgeInsets)contentInset {
-    [UIView animateWithDuration:0.3
-                          delay:0
-                        options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
-                     animations:^{
+//    [UIView animateWithDuration:0.3
+//                          delay:0
+//                        options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState
+//                     animations:^{
                          self.scrollView.contentInset = contentInset;
-                     }
-                     completion:NULL];
+//                     }
+//                     completion:NULL];
 }
 
 #pragma mark - Observing

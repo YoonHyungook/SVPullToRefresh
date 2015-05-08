@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <AvailabilityMacros.h>
 
-#define PullOffsetTrigger (isiPad?240:140)
+#define PullOffsetTrigger (isiPad?140:60)
 
 @class SVPullToRefreshView;
 
