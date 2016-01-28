@@ -786,11 +786,13 @@ static char UIScrollViewPullUpToRefreshView;
 }
 
 - (void)rotateArrow:(float)degrees hide:(BOOL)hide {
-    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.arrow.layer.transform = CATransform3DMakeRotation(degrees, 0, 0, 1);
-        self.arrow.layer.opacity = !hide;
-        //[self.arrow setNeedsDisplay];//ios 4
-    } completion:NULL];
+    if (self && self.arrow) {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            self.arrow.layer.transform = CATransform3DMakeRotation(degrees, 0, 0, 1);
+            self.arrow.layer.opacity = !hide;
+            //[self.arrow setNeedsDisplay];//ios 4
+        } completion:NULL];
+    }
 }
 
 @end
