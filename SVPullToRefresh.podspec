@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 spec.name         = 'SVPullToRefresh'
 spec.version      = '0.4.2'
-spec.platform     = :ios
+spec.platform     = :ios, '7.0'
 spec.license      = 'BSD'
 spec.homepage     = 'https://github.com/YoonHyungook/SVPullToRefresh'
 spec.authors      = 'YoonHyungook'
